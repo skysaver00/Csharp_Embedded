@@ -35,6 +35,8 @@ namespace WinFormsFor
             this.btnRun = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.listBox = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +53,7 @@ namespace WinFormsFor
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(112, 66);
+            this.numericUpDown1.Location = new System.Drawing.Point(112, 65);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(139, 23);
             this.numericUpDown1.TabIndex = 1;
@@ -68,12 +70,14 @@ namespace WinFormsFor
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(18, 146);
+            this.btnRun.BackColor = System.Drawing.Color.LightCoral;
+            this.btnRun.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRun.Location = new System.Drawing.Point(18, 141);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(233, 40);
             this.btnRun.TabIndex = 3;
-            this.btnRun.Text = "button1";
-            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Text = "무작위 생성!";
+            this.btnRun.UseVisualStyleBackColor = false;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // label3
@@ -88,24 +92,45 @@ namespace WinFormsFor
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(112, 102);
+            this.numericUpDown2.Location = new System.Drawing.Point(112, 101);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(139, 23);
             this.numericUpDown2.TabIndex = 5;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(267, 13);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(394, 23);
+            this.progressBar.TabIndex = 6;
+            // 
+            // listBox
+            // 
+            this.listBox.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 15;
+            this.listBox.Location = new System.Drawing.Point(267, 42);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(394, 139);
+            this.listBox.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(678, 198);
+            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "무작위 생성!";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
@@ -121,6 +146,8 @@ namespace WinFormsFor
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.ListBox listBox;
     }
 }
 

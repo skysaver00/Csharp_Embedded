@@ -19,6 +19,14 @@ namespace WinFormsFor
 
         private void btnRun_Click(object sender, EventArgs e)
         {
+            int value = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
+            int value2 = Convert.ToInt32(Math.Round(numericUpDown2.Value, 0));
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
