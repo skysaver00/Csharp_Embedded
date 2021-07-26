@@ -23,13 +23,15 @@ namespace WinFormsFor
             int value = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
             int value2 = Convert.ToInt32(Math.Round(numericUpDown2.Value, 0));
 
-            for(int i = 0; i < value2; i++)
+            if (value < value2) return;
+
+            for (int i = 0; i < value2; i++)
             {
                 System.Random random = new System.Random();
                 int num = random.Next(1, value + 1);
 
                 bool flag = false;
-                for(int j = 0; j < i; j++)
+                for (int j = 0; j < i; j++)
                 {
                     if (array[j] == num)
                     {
@@ -38,16 +40,20 @@ namespace WinFormsFor
                     }
                 }
 
-                if(flag == true)
+                if (flag == true)
                 {
                     i--;
                     continue;
                 }
                 else
                 {
-
+                    array[i] = num;
+                    listBox.Items.Add(num);
                 }
+                listBox.Refresh();
+                System.Threading.Thread.Sleep(1000);
             }
+            listBox.Items.Add("완료!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
