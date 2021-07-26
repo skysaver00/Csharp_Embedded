@@ -22,8 +22,17 @@ namespace WinFormsFor
             int[] array = new int[1000];
             int value = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
             int value2 = Convert.ToInt32(Math.Round(numericUpDown2.Value, 0));
+            listBox.Items.Clear();
 
-            if (value < value2) return;
+            progressBar.Maximum = 100;
+            progressBar.Step = 1;
+            progressBar.Value = 0;
+
+            if (value < value2)
+            {
+                listBox.Items.Add("출력 불가");
+                return;
+            }
 
             for (int i = 0; i < value2; i++)
             {
@@ -49,9 +58,12 @@ namespace WinFormsFor
                 {
                     array[i] = num;
                     listBox.Items.Add(num);
+                    progressBar.Value = (int)((100 * (i + 1)) / (value2));
                 }
                 listBox.Refresh();
-                System.Threading.Thread.Sleep(1000);
+
+                int time = random.Next(50, 131);
+                System.Threading.Thread.Sleep(time * 10);
             }
             listBox.Items.Add("완료!");
         }
