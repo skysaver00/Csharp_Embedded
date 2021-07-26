@@ -1,0 +1,15 @@
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.exe
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.deps.json
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.runtimeconfig.json
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.runtimeconfig.dev.json
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.dll
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\bin\Debug\netcoreapp3.1\WinFormsFor.pdb
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.csprojAssemblyReference.cache
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.Form1.resources
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.csproj.GenerateResource.cache
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.AssemblyInfoInputs.cache
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.AssemblyInfo.cs
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.csproj.CoreCompileInputs.cache
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.dll
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.pdb
+C:\Users\skysaver00\CSharp\WinFormsFor\WinFormsFor\obj\Debug\netcoreapp3.1\WinFormsFor.genruntimeconfig.cache
