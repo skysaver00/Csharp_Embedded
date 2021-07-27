@@ -1,0 +1,12 @@
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.exe
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.deps.json
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.runtimeconfig.json
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.runtimeconfig.dev.json
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.dll
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\bin\Debug\netcoreapp3.1\SocketServer.pdb
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.AssemblyInfoInputs.cache
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.AssemblyInfo.cs
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.csproj.CoreCompileInputs.cache
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.dll
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.pdb
+C:\Users\skysaver00\CSharp\SocketServer\SocketServer\obj\Debug\netcoreapp3.1\SocketServer.genruntimeconfig.cache
