@@ -39,17 +39,21 @@ namespace UDP_Send
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Beige;
+            this.button1.Cursor = System.Windows.Forms.Cursors.No;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(491, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(297, 170);
             this.button1.TabIndex = 0;
-            this.button1.Text = "패킷 전송";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "UDP 메세지 전송";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBox1
@@ -126,11 +130,23 @@ namespace UDP_Send
             this.label4.TabIndex = 9;
             this.label4.Text = "IP 주소";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("맑은 고딕", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(306, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 23);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "주소가 여기 나타남";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(800, 192);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -162,6 +178,7 @@ namespace UDP_Send
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
