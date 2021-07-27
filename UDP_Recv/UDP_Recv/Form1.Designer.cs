@@ -74,6 +74,8 @@ namespace UDP_Recv
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "서버";
             this.ResumeLayout(false);
