@@ -14,8 +14,6 @@ namespace UDP_Send
 {
     public partial class Form1 : Form
     {
-        UdpClient cli = new UdpClient();
-        string msg;
 
         public Form1()
         {
@@ -29,8 +27,17 @@ namespace UDP_Send
 
         private void button1_Click(object sender, EventArgs e)
         {
-            msg = richTextBox1.Text;
-            byte[] data = Encoding.UTF8.GetString(msg);
+            UdpClient client = new UdpClient();
+            String T
+
+            IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+            client.Connect(ep);
+
+            String msg = richTextBox1.Text;
+
+            byte[] data = Encoding.ASCII.GetBytes(msg);
+            client.Send(data, data.Length);
+            client.Close();
         }
     }
 }

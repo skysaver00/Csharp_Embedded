@@ -14,7 +14,9 @@ namespace UDP_Recv
 {
     public partial class Form1 : Form
     {
-        UdpClient Client = new UdpClient(8080); //포트 번호
+        UdpClient listen = new UdpClient(8080); //포트 번호
+
+        IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
         String data = "";
 
         public Form1()
@@ -24,20 +26,24 @@ namespace UDP_Recv
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            for (int i = 0; i < 1000; i++)
             {
-                Client.BeginReceive(new AsyncCallback(recv), null);
-            }
-            catch(Exception ex)
-            {
-                richTextBox1.Text += ex.Message.ToString();
+                try
+                {
+                    listen.BeginReceive(new AsyncCallback(recv), null);
+                }
+                catch (Exception ex)
+                {
+                    richTextBox1.Text += ex.Message.ToString();
+                    byte[] sendByte = Encoding.ASCII.GetBytes("OK RECEIVED\n");
+                    listen.Send(sendByte, sendByte.Length, RemoteIP);
+                }
             }
         }
 
         void recv(IAsyncResult res)
         {
-            IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
-            byte[] received = Client.EndReceive(res, ref RemoteIP);
+            byte[] received = listen.EndReceive(res, ref RemoteIP);
             data = Encoding.ASCII.GetString(received);
 
             string hexData = "";
