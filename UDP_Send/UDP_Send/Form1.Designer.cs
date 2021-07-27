@@ -160,7 +160,7 @@ namespace UDP_Send
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "클라이언트";
             this.ResumeLayout(false);
             this.PerformLayout();
 

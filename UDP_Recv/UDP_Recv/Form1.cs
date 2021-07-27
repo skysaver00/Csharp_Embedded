@@ -58,6 +58,7 @@ namespace UDP_Recv
 
             this.Invoke(new MethodInvoker(delegate
             {
+                richTextBox1.Text += DateTime.Now.ToString("yy년 MM월 dd일 hh:mm:ss\n");
                 richTextBox1.Text += hexData;
             }));
         }
