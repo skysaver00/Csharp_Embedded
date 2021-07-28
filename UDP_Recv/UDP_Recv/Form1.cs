@@ -37,6 +37,9 @@ namespace UDP_Recv
 
         public void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            button1.Text = "수신 중...";
+
             state.u = listen;
             state.e = RemoteIP;
             listen.BeginReceive(new AsyncCallback(recv), state);
@@ -49,10 +52,13 @@ namespace UDP_Recv
                 catch (Exception ex)
                 {
                     richTextBox1.Text += ex.Message.ToString();
-                    byte[] sendByte = Encoding.ASCII.GetBytes("OK RECEIVED\n");
-                    listen.Send(sendByte, sendByte.Length, RemoteIP);
                 }
             }*/
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
 
         void recv(IAsyncResult res)
@@ -60,6 +66,11 @@ namespace UDP_Recv
             UdpClient listen = ((UdpState)(res.AsyncState)).u;
             IPEndPoint RemoteIP = ((UdpState)(res.AsyncState)).e;
             byte[] received = listen.EndReceive(res, ref RemoteIP);
+
+            IPEndPoint sendIP = new IPEndPoint(IPAddress.Parse("220.76.184.210"), 8080);
+            byte[] sendByte = Encoding.ASCII.GetBytes("OK RECEIVED\n");
+            listen.Send(sendByte, sendByte.Length, sendIP);
+
             listen.BeginReceive(new AsyncCallback(recv), state);
             data = Encoding.ASCII.GetString(received);
 
@@ -75,7 +86,9 @@ namespace UDP_Recv
 
             this.Invoke(new MethodInvoker(delegate
             {
-                richTextBox1.Text += DateTime.Now.ToString("yy년 MM월 dd일 hh:mm:ss\n");
+                richTextBox1.Text += DateTime.Now.ToString("yy년 MM월 dd일 HH:mm:ss\n");
+                richTextBox1.Text += RemoteIP.ToString();
+                richTextBox1.Text += " ";
                 richTextBox1.Text += hexData;
             }));
         }
