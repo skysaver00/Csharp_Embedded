@@ -13,3 +13,4 @@ C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.dll
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.pdb
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.genruntimeconfig.cache
+C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\GUI_Close.Form2.resources
