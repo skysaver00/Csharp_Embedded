@@ -58,7 +58,11 @@ namespace UDP_Recv
 
         private void button2_Click(object sender, EventArgs e)
         {
+            IPEndPoint sendIP = new IPEndPoint(IPAddress.Parse("220.76.184.210"), 8080);
+            String sendMsg = richTextBox2.Text;
+            byte[] sendByte = Encoding.UTF8.GetBytes(sendMsg);
 
+            listen.Send(sendByte, sendByte.Length, sendIP);
         }
 
         void recv(IAsyncResult res)
