@@ -10,33 +10,25 @@ using System.Windows.Forms;
 
 namespace First_GUI
 {
-    public partial class Form1 : Form
+    public partial class stationMainForm : Form
     {
-        public Form1()
+        public stationMainForm()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Rectangle bounds = Screen.FromHandle(this.Handle).WorkingArea;
-            int x_offset = SystemInformation.HorizontalResizeBorderThickness + SystemInformation.FixedFrameBorderSize.Width;
-            int y_offset = SystemInformation.VerticalResizeBorderThickness + SystemInformation.FixedFrameBorderSize.Height;
-
-            bounds.X -= x_offset;
-            bounds.Width += (x_offset * 2);
-            bounds.Height += y_offset;
-
-            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.MaximizedBounds = bounds;
-
-            // 창 크기 최대화 처리
-            this.WindowState = FormWindowState.Maximized;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form form2 = new Form();
+            Form form2 = new Form2();
+            form2.ShowDialog();
         }
     }
 }

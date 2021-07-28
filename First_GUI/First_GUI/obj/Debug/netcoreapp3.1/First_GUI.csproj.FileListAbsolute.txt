@@ -5,7 +5,6 @@ C:\Users\skysaver00\CSharp\First_GUI\First_GUI\bin\Debug\netcoreapp3.1\First_GUI
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\bin\Debug\netcoreapp3.1\First_GUI.dll
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\bin\Debug\netcoreapp3.1\First_GUI.pdb
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.csproj.AssemblyReference.cache
-C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.Form1.resources
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.csproj.GenerateResource.cache
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.AssemblyInfoInputs.cache
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.AssemblyInfo.cs
@@ -13,4 +12,5 @@ C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.dll
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.pdb
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.genruntimeconfig.cache
-C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\GUI_Close.Form2.resources
+C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.Form2.resources
+C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.stationMainForm.resources
