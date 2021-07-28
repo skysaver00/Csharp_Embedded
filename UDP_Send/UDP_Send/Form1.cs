@@ -59,6 +59,7 @@ namespace UDP_Send
             return val;
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             UdpClient client = new UdpClient();
@@ -77,6 +78,7 @@ namespace UDP_Send
 
             byte[] data = Encoding.ASCII.GetBytes(msg);
             client.Send(data, data.Length);
+
             client.Close();
         }
     }
