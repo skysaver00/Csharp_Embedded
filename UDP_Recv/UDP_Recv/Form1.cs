@@ -26,25 +26,19 @@ namespace UDP_Recv
             public IPEndPoint e;
         }
 
+        UdpState state = new UdpState();
+
         String data = "";
 
         public Form1()
         {
             InitializeComponent();
-            this.Doconnect();
-        }
-
-        public void Doconnect()
-        {
-
         }
 
         public void button1_Click(object sender, EventArgs e)
         {
-            UdpState state = new UdpState();
             state.u = listen;
             state.e = RemoteIP;
-
             listen.BeginReceive(new AsyncCallback(recv), state);
 
             /*for (int i = 0; i < 1000; i++)
@@ -66,6 +60,7 @@ namespace UDP_Recv
             UdpClient listen = ((UdpState)(res.AsyncState)).u;
             IPEndPoint RemoteIP = ((UdpState)(res.AsyncState)).e;
             byte[] received = listen.EndReceive(res, ref RemoteIP);
+            listen.BeginReceive(new AsyncCallback(recv), state);
             data = Encoding.ASCII.GetString(received);
 
             string hexData = "";
