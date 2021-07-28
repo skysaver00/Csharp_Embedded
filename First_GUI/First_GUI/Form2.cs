@@ -18,8 +18,7 @@ namespace First_GUI
         private void button1_Click(object sender, EventArgs e)
         {
             stationMainForm form1 = new stationMainForm();
-            form1.Close();
-            this.Close();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
