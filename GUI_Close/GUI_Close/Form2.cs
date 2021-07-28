@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_Close
 {
-    public partial class 래그2 : Form
+    public partial class Form2 : Form
     {
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void form_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
