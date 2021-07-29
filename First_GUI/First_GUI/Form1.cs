@@ -39,6 +39,18 @@ namespace First_GUI
             }
         }
 
+        private async void Blink(bool ck)
+        {
+            while(true)
+            {
+                if (!ck) break;
+                await Task.Delay(300);
+                label2.BackColor = label2.BackColor == Color.Red ? Color.White : Color.Red;
+            }
+
+            return;
+        }
+
         void Arrow(object sender, PaintEventArgs e)
         {
             Pen pen = new Pen(Color.White, 5); //Pen 객체 생성
@@ -126,10 +138,15 @@ namespace First_GUI
 
             if(stringArr[0] == "YES" || stringArr[0] == "yes" || stringArr[0] == "Yes")
             {
+                Blink(false);
                 label2.BackColor = Color.Red;
             } else if(stringArr[0] == "NO" || stringArr[0] == "no" || stringArr[0] == "No")
             {
+                Blink(false);
                 label2.BackColor = Color.White;
+            } else if(stringArr[0] == "HALT" || stringArr[0] == "halt" || stringArr[0] == "Halt")
+            {
+                Blink(true);
             }
 
             object send = speedLabel;
