@@ -16,7 +16,7 @@ namespace First_GUI
 {
     public partial class stationMainForm : Form
     {
-
+        delegate void CrossThreadSafetySetText(Control ctl, String text);
         public struct UdpState
         {
             public UdpClient u;
@@ -24,8 +24,19 @@ namespace First_GUI
         }
 
         UdpState state = new UdpState();
-
         String data = "";
+
+        private void safeSpeedText(Control ctl, String stringArr)
+        {
+            if(ctl.InvokeRequired)
+            {
+                ctl.Invoke(new CrossThreadSafetySetText(safeSpeedText), ctl, stringArr);
+            } else
+            {
+                if (!string.IsNullOrEmpty(stringArr)) ctl.Text = stringArr.ToString();
+                else ctl.Text = "";
+            }
+        }
 
         public stationMainForm()
         {
@@ -94,20 +105,20 @@ namespace First_GUI
             int i = 0;
             foreach(char each in hex)
             {
-                if (each.Equals(" "))
-                {
-                    i++;
-                    break;
-                }
+                if (each.Equals(' ')) i++;;
                 stringArr[i] += each;
             }
-            if(stringArr[0] == "YES")
+
+            if(stringArr[0] == "YES" || stringArr[0] == "yes" || stringArr[0] == "Yes")
             {
                 label2.BackColor = Color.Red;
-            } else if(stringArr[0] == "NO")
+            } else if(stringArr[0] == "NO" || stringArr[0] == "no" || stringArr[0] == "No")
             {
                 label2.BackColor = Color.White;
             }
+
+            object send = speedLabel;
+            safeSpeedText((Control)send, stringArr[1]);
         }
     }
 }

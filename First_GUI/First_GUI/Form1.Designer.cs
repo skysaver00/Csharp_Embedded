@@ -34,6 +34,7 @@ namespace First_GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.speedLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -67,7 +68,7 @@ namespace First_GUI
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(455, 625);
+            this.label2.Location = new System.Drawing.Point(533, 628);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(405, 35);
             this.label2.TabIndex = 2;
@@ -80,7 +81,7 @@ namespace First_GUI
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(866, 625);
+            this.label3.Location = new System.Drawing.Point(944, 628);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(405, 35);
             this.label3.TabIndex = 3;
@@ -89,11 +90,23 @@ namespace First_GUI
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(455, 124);
+            this.richTextBox1.Location = new System.Drawing.Point(533, 127);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(405, 485);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
+            // 
+            // speedLabel
+            // 
+            this.speedLabel.AutoSize = true;
+            this.speedLabel.BackColor = System.Drawing.Color.White;
+            this.speedLabel.Font = new System.Drawing.Font("맑은 고딕", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.speedLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.speedLabel.Location = new System.Drawing.Point(944, 565);
+            this.speedLabel.Name = "speedLabel";
+            this.speedLabel.Size = new System.Drawing.Size(0, 47);
+            this.speedLabel.TabIndex = 5;
+            this.speedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // stationMainForm
             // 
@@ -102,6 +115,7 @@ namespace First_GUI
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1920, 1040);
+            this.Controls.Add(this.speedLabel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -125,6 +139,7 @@ namespace First_GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label speedLabel;
     }
 }
 

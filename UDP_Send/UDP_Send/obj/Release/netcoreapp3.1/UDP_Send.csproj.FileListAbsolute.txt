@@ -1,0 +1,20 @@
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.exe
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.deps.json
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.runtimeconfig.json
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.runtimeconfig.dev.json
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.dll
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\bin\Release\netcoreapp3.1\UDP_Send.pdb
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.Form1.resources
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.csproj.GenerateResource.cache
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.AssemblyInfoInputs.cache
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.AssemblyInfo.cs
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.csproj.CoreCompileInputs.cache
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.dll
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.pdb
+C:\Users\skysaver00\CSharp\UDP_Send\UDP_Send\obj\Release\netcoreapp3.1\UDP_Send.genruntimeconfig.cache
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.exe
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.deps.json
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.runtimeconfig.json
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.runtimeconfig.dev.json
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.dll
+C:\Users\skysaver00\Desktop\새 폴더\netcoreapp3.1\UDP_Send.pdb
