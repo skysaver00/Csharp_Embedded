@@ -17,7 +17,6 @@ namespace First_GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stationMainForm form1 = new stationMainForm();
             Application.Exit();
         }
 

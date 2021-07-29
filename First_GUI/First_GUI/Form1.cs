@@ -10,13 +10,12 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
+using System.Diagnostics;
 
 namespace First_GUI
 {
     public partial class stationMainForm : Form
     {
-        UdpClient listen = new UdpClient(8080); //포트 번호
-        IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
 
         public struct UdpState
         {
@@ -30,6 +29,9 @@ namespace First_GUI
 
         public stationMainForm()
         {
+            UdpClient listen = new UdpClient(8080); //포트 번호
+            IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
+
             InitializeComponent();
 
             state.u = listen;
@@ -81,6 +83,31 @@ namespace First_GUI
                 richTextBox1.Text += " ";
                 richTextBox1.Text += hexData;
             }));
+
+            check(data);
+        }
+
+        public void check(String hex)
+        {
+            Debug.WriteLine(hex);
+            string[] stringArr = new string[100];
+            int i = 0;
+            foreach(char each in hex)
+            {
+                if (each.Equals(" "))
+                {
+                    i++;
+                    break;
+                }
+                stringArr[i] += each;
+            }
+            if(stringArr[0] == "YES")
+            {
+                label2.BackColor = Color.Red;
+            } else if(stringArr[0] == "NO")
+            {
+                label2.BackColor = Color.White;
+            }
         }
     }
 }
