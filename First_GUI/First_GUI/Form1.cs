@@ -11,6 +11,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 
 namespace First_GUI
 {
@@ -38,17 +39,22 @@ namespace First_GUI
             }
         }
 
-        private void table1()
+        void Arrow(object sender, PaintEventArgs e)
         {
-            object sender = tableLayoutPanel1;
-            var control = sender as Control;
+            Pen pen = new Pen(Color.White, 5); //Pen 객체 생성
+            pen.StartCap = LineCap.ArrowAnchor; //Line의 시작점 모양 변경
+            pen.EndCap = LineCap.RoundAnchor;
+            e.Graphics.DrawLine(pen, 180, 400, 380, 400); //Line 그리기
 
-            tableLayoutPanel1.SetColumnSpan(control, 2);
+            Pen pen2 = new Pen(Color.White, 5);
+            pen2.StartCap = LineCap.RoundAnchor;
+            pen2.EndCap = LineCap.ArrowAnchor;
+            e.Graphics.DrawLine(pen2, 1540, 400, 1740, 400);
         }
 
         public stationMainForm()
         {
-            table1();
+            this.Paint += new PaintEventHandler(Arrow);
             UdpClient listen = new UdpClient(8080); //포트 번호
             IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
 
