@@ -38,8 +38,17 @@ namespace First_GUI
             }
         }
 
+        private void table1()
+        {
+            object sender = tableLayoutPanel1;
+            var control = sender as Control;
+
+            tableLayoutPanel1.SetColumnSpan(control, 2);
+        }
+
         public stationMainForm()
         {
+            table1();
             UdpClient listen = new UdpClient(8080); //포트 번호
             IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
 
