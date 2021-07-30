@@ -32,18 +32,18 @@ namespace First_GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stationMainForm));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.twoTLabelFirst = new System.Windows.Forms.Label();
+            this.twoTLabelSecond = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.speedLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.threeTLabelFirst = new System.Windows.Forms.Label();
+            this.threeTLabelSecond = new System.Windows.Forms.Label();
+            this.B227AT_Label = new System.Windows.Forms.Label();
+            this.YT_Label = new System.Windows.Forms.Label();
+            this.XT_Label = new System.Windows.Forms.Label();
+            this.B226BT_Label = new System.Windows.Forms.Label();
             this.diagLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,30 +73,29 @@ namespace First_GUI
             this.label1.TabIndex = 1;
             this.label1.Text = "역 이름";
             // 
-            // label2
+            // twoTLabelFirst
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(533, 628);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(405, 35);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "2T";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.twoTLabelFirst.BackColor = System.Drawing.Color.White;
+            this.twoTLabelFirst.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.twoTLabelFirst.ForeColor = System.Drawing.Color.Blue;
+            this.twoTLabelFirst.Location = new System.Drawing.Point(533, 628);
+            this.twoTLabelFirst.Name = "twoTLabelFirst";
+            this.twoTLabelFirst.Size = new System.Drawing.Size(405, 33);
+            this.twoTLabelFirst.TabIndex = 2;
+            this.twoTLabelFirst.Text = "2T";
+            this.twoTLabelFirst.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // twoTLabelSecond
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(944, 628);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(405, 35);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "2T";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.twoTLabelSecond.BackColor = System.Drawing.Color.White;
+            this.twoTLabelSecond.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.twoTLabelSecond.ForeColor = System.Drawing.Color.Blue;
+            this.twoTLabelSecond.Location = new System.Drawing.Point(944, 628);
+            this.twoTLabelSecond.Name = "twoTLabelSecond";
+            this.twoTLabelSecond.Size = new System.Drawing.Size(405, 33);
+            this.twoTLabelSecond.TabIndex = 3;
+            this.twoTLabelSecond.Text = "2T";
+            this.twoTLabelSecond.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // richTextBox1
             // 
@@ -163,91 +162,86 @@ namespace First_GUI
             this.label4.Text = "속도";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // threeTLabelFirst
             // 
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(533, 463);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(405, 35);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "3T";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.threeTLabelFirst.BackColor = System.Drawing.Color.White;
+            this.threeTLabelFirst.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.threeTLabelFirst.ForeColor = System.Drawing.Color.Blue;
+            this.threeTLabelFirst.Location = new System.Drawing.Point(533, 463);
+            this.threeTLabelFirst.Name = "threeTLabelFirst";
+            this.threeTLabelFirst.Size = new System.Drawing.Size(405, 33);
+            this.threeTLabelFirst.TabIndex = 7;
+            this.threeTLabelFirst.Text = "3T";
+            this.threeTLabelFirst.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label6
+            // threeTLabelSecond
             // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(944, 463);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(405, 35);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "3T";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.threeTLabelSecond.BackColor = System.Drawing.Color.White;
+            this.threeTLabelSecond.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.threeTLabelSecond.ForeColor = System.Drawing.Color.Blue;
+            this.threeTLabelSecond.Location = new System.Drawing.Point(944, 463);
+            this.threeTLabelSecond.Name = "threeTLabelSecond";
+            this.threeTLabelSecond.Size = new System.Drawing.Size(405, 33);
+            this.threeTLabelSecond.TabIndex = 8;
+            this.threeTLabelSecond.Text = "3T";
+            this.threeTLabelSecond.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label7
+            // B227AT_Label
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(263, 628);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(264, 35);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "B227AT";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.B227AT_Label.BackColor = System.Drawing.Color.White;
+            this.B227AT_Label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.B227AT_Label.ForeColor = System.Drawing.Color.Blue;
+            this.B227AT_Label.Location = new System.Drawing.Point(263, 628);
+            this.B227AT_Label.Name = "B227AT_Label";
+            this.B227AT_Label.Size = new System.Drawing.Size(264, 33);
+            this.B227AT_Label.TabIndex = 9;
+            this.B227AT_Label.Text = "B227AT";
+            this.B227AT_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label8
+            // YT_Label
             // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(75, 628);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 35);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "YT";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.YT_Label.BackColor = System.Drawing.Color.White;
+            this.YT_Label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YT_Label.ForeColor = System.Drawing.Color.Blue;
+            this.YT_Label.Location = new System.Drawing.Point(75, 628);
+            this.YT_Label.Name = "YT_Label";
+            this.YT_Label.Size = new System.Drawing.Size(182, 33);
+            this.YT_Label.TabIndex = 10;
+            this.YT_Label.Text = "YT";
+            this.YT_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label9
+            // XT_Label
             // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(1625, 628);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 35);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "XT";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.XT_Label.BackColor = System.Drawing.Color.White;
+            this.XT_Label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.XT_Label.ForeColor = System.Drawing.Color.Blue;
+            this.XT_Label.Location = new System.Drawing.Point(1625, 628);
+            this.XT_Label.Name = "XT_Label";
+            this.XT_Label.Size = new System.Drawing.Size(182, 33);
+            this.XT_Label.TabIndex = 12;
+            this.XT_Label.Text = "XT";
+            this.XT_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label10
+            // B226BT_Label
             // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(1355, 628);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(264, 35);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "B226BT";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.B226BT_Label.BackColor = System.Drawing.Color.White;
+            this.B226BT_Label.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.B226BT_Label.ForeColor = System.Drawing.Color.Blue;
+            this.B226BT_Label.Location = new System.Drawing.Point(1355, 628);
+            this.B226BT_Label.Name = "B226BT_Label";
+            this.B226BT_Label.Size = new System.Drawing.Size(264, 33);
+            this.B226BT_Label.TabIndex = 11;
+            this.B226BT_Label.Text = "B226BT";
+            this.B226BT_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // diagLabel
             // 
             this.diagLabel.BackColor = System.Drawing.Color.White;
-            this.diagLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.diagLabel.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diagLabel.ForeColor = System.Drawing.Color.Blue;
             this.diagLabel.Location = new System.Drawing.Point(353, 463);
             this.diagLabel.Name = "diagLabel";
-            this.diagLabel.Size = new System.Drawing.Size(174, 35);
+            this.diagLabel.Size = new System.Drawing.Size(174, 33);
             this.diagLabel.TabIndex = 13;
             this.diagLabel.Text = "3T";
             this.diagLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -260,16 +254,16 @@ namespace First_GUI
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1920, 1040);
             this.Controls.Add(this.diagLabel);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.XT_Label);
+            this.Controls.Add(this.B226BT_Label);
+            this.Controls.Add(this.YT_Label);
+            this.Controls.Add(this.B227AT_Label);
+            this.Controls.Add(this.threeTLabelSecond);
+            this.Controls.Add(this.threeTLabelFirst);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.twoTLabelSecond);
+            this.Controls.Add(this.twoTLabelFirst);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -290,18 +284,18 @@ namespace First_GUI
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label twoTLabelFirst;
+        private System.Windows.Forms.Label twoTLabelSecond;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label speedLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label threeTLabelFirst;
+        private System.Windows.Forms.Label threeTLabelSecond;
+        private System.Windows.Forms.Label B227AT_Label;
+        private System.Windows.Forms.Label YT_Label;
+        private System.Windows.Forms.Label XT_Label;
+        private System.Windows.Forms.Label B226BT_Label;
         private System.Windows.Forms.Label diagLabel;
     }
 }

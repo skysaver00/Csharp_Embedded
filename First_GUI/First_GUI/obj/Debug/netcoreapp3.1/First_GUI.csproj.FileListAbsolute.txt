@@ -14,3 +14,4 @@ C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.genruntimeconfig.cache
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.Form2.resources
 C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.stationMainForm.resources
+C:\Users\skysaver00\CSharp\First_GUI\First_GUI\obj\Debug\netcoreapp3.1\First_GUI.Properties.Resources.resources
