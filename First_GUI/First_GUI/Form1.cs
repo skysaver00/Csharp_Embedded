@@ -27,6 +27,9 @@ namespace First_GUI
         UdpState state = new UdpState();
         String data = "";
 
+        Pen LineYT = new Pen(Color.White, 20);
+        Pen B227AT = new Pen(Color.White, 20);
+        Pen twoT_first = new Pen(Color.White, 20);
         private void safeSpeedText(Control ctl, String stringArr)
         {
             if(ctl.InvokeRequired)
@@ -64,8 +67,22 @@ namespace First_GUI
             e.Graphics.DrawLine(pen2, 1540, 400, 1740, 400);
         }
 
+        void DrawLine(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(LineYT, 75, 645, 257, 645);
+            e.Graphics.DrawLine(B227AT, 263, 645, 527, 645);
+            e.Graphics.DrawLine(twoT_first, 533, 645, 938, 645);
+        }
+
+        void ChangeColor(object sender, PaintEventArgs e)
+        {
+            twoT_first.Color = System.Drawing.Color.Red;
+            e.Graphics.DrawLine(twoT_first, 533, 645, 938, 645);
+        }
+
         public stationMainForm()
         {
+            this.Paint += new PaintEventHandler(DrawLine);
             this.Paint += new PaintEventHandler(Arrow);
             UdpClient listen = new UdpClient(8080); //포트 번호
             IPEndPoint RemoteIP = new IPEndPoint(IPAddress.Any, 60240);
@@ -138,15 +155,12 @@ namespace First_GUI
 
             if(stringArr[0] == "YES" || stringArr[0] == "yes" || stringArr[0] == "Yes")
             {
-                Blink(false);
-                label2.BackColor = Color.Red;
+                this.Paint += new PaintEventHandler(ChangeColor);
             } else if(stringArr[0] == "NO" || stringArr[0] == "no" || stringArr[0] == "No")
             {
-                Blink(false);
-                label2.BackColor = Color.White;
+                twoT_first.Color = Color.White;
             } else if(stringArr[0] == "HALT" || stringArr[0] == "halt" || stringArr[0] == "Halt")
             {
-                Blink(true);
             }
 
             object send = speedLabel;
