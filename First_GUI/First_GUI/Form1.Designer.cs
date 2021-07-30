@@ -45,6 +45,7 @@ namespace First_GUI
             this.XT_Label = new System.Windows.Forms.Label();
             this.B226BT_Label = new System.Windows.Forms.Label();
             this.diagLabel = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -246,6 +247,18 @@ namespace First_GUI
             this.diagLabel.Text = "3T";
             this.diagLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timeLabel.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeLabel.ForeColor = System.Drawing.Color.White;
+            this.timeLabel.Location = new System.Drawing.Point(12, 13);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(78, 32);
+            this.timeLabel.TabIndex = 14;
+            this.timeLabel.Text = "label2";
+            // 
             // stationMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -253,6 +266,7 @@ namespace First_GUI
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1920, 1040);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.diagLabel);
             this.Controls.Add(this.XT_Label);
             this.Controls.Add(this.B226BT_Label);
@@ -297,6 +311,7 @@ namespace First_GUI
         private System.Windows.Forms.Label XT_Label;
         private System.Windows.Forms.Label B226BT_Label;
         private System.Windows.Forms.Label diagLabel;
+        private System.Windows.Forms.Label timeLabel;
     }
 }
 

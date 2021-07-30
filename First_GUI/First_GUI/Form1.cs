@@ -71,6 +71,8 @@ namespace First_GUI
 
             InitializeComponent();
 
+            timeLabel.Text = DateTime.Now.ToString();
+
             state.u = listen;
             state.e = RemoteIP;
             listen.BeginReceive(new AsyncCallback(recv), state);
@@ -137,10 +139,15 @@ namespace First_GUI
 
             if(stringArr[0] == "YES" || stringArr[0] == "yes" || stringArr[0] == "Yes")
             {
+                twoTLabelFirst.BackColor = Color.Red;
+                twoTLabelSecond.BackColor = Color.Red;
             } else if(stringArr[0] == "NO" || stringArr[0] == "no" || stringArr[0] == "No")
             {
+                twoTLabelFirst.BackColor = Color.White;
+                twoTLabelSecond.BackColor = Color.White;
             } else if(stringArr[0] == "HALT" || stringArr[0] == "halt" || stringArr[0] == "Halt")
             {
+
             }
 
             object send = speedLabel;
