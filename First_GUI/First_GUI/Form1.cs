@@ -71,7 +71,7 @@ namespace First_GUI
 
             InitializeComponent();
 
-            timeLabel.Text = DateTime.Now.ToString();
+            timeLabel.Text = DateTime.Now.ToString("yyyy년 MMMM dd일, dddd");
 
             state.u = listen;
             state.e = RemoteIP;
