@@ -44,7 +44,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+extern uint32_t sys;
+uint32_t t2 = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,7 +65,6 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -94,9 +94,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
-  
+    
   while (1)
   {
+    if(sys % 500 == 200) t2 = 0;
+    
+    if(sys % 500 == 0 && t2 == 0) {
+      t2 = 1;
+      HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+      HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_7);
+    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
