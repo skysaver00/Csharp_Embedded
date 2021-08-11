@@ -85,115 +85,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
   }
 }
 
-void SevenSegment_1(int val) {
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, SET);
-  else HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, SET);
-  else HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, SET);
-  else HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, SET);
-  else HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, SET);
-  else HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, SET);
-  else HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, SET);
-  else HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, RESET);
-}
-
-void SevenSegment_10(int val) {
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, SET);
-  else HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, SET);
-  else HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, SET);
-  else HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, SET);
-  else HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, SET);
-  else HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, SET);
-  else HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, SET);
-  else HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, RESET);
-}
-
-void SevenSegment_100(int val) {
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, SET);
-  else HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, SET);
-  else HAL_GPIO_WritePin(SEGB_GPIO_Port, SEGB_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, SET);
-  else HAL_GPIO_WritePin(SEGC_GPIO_Port, SEGC_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, SET);
-  else HAL_GPIO_WritePin(SEGD_GPIO_Port, SEGD_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, SET);
-  else HAL_GPIO_WritePin(SEGE_GPIO_Port, SEGE_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, SET);
-  else HAL_GPIO_WritePin(SEGF_GPIO_Port, SEGF_Pin, RESET);
-
-  val /= 2;
-  ck = val % 2;
-  if(ck == 1) HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, SET);
-  else HAL_GPIO_WritePin(SEGG_GPIO_Port, SEGG_Pin, RESET);
-}
-
-void SevenSegment_1000(int val) {
+void SevenSegment(int val) {
   ck = val % 2;
   if(ck == 1) HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, SET);
   else HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, RESET);
@@ -271,25 +163,25 @@ int main(void)
     temp100 = (Run2 / 100) % 10;
     temp1000 = Run2 / 1000;
     
-    SevenSegment_1(temp1);
+    SevenSegment(temp1);
     D1_LOW();
-    HAL_Delay(7);
+    HAL_Delay(1);
     D1_HIGH();
     
-    SevenSegment_10(temp10);
-    D2_LOW();
-    HAL_Delay(7);
-    D2_HIGH();
+    SevenSegment(temp10);
+    D10_LOW();
+    HAL_Delay(1);
+    D10_HIGH();
 
-    SevenSegment_100(temp100);
-    D3_LOW();
-    HAL_Delay(7);
-    D3_HIGH();
+    SevenSegment(temp100);
+    D100_LOW();
+    HAL_Delay(1);
+    D100_HIGH();
 
-    SevenSegment_1000(temp1000);
-    D4_LOW();
-    HAL_Delay(7);
-    D4_HIGH();
+    SevenSegment(temp1000);
+    D1000_LOW();
+    HAL_Delay(1);
+    D1000_HIGH();
 
     /*if(Run % 50 == 0 && die == 0) {
       if(num % 10 == 0) num = 1;
