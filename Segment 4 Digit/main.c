@@ -36,12 +36,12 @@
 /* USER CODE BEGIN PD */
 #define D1_HIGH() HAL_GPIO_WritePin(D1_GPIO_Port, D1_Pin, GPIO_PIN_SET)
 #define D1_LOW() HAL_GPIO_WritePin(D1_GPIO_Port, D1_Pin, GPIO_PIN_RESET)
-#define D2_HIGH() HAL_GPIO_WritePin(D2_GPIO_Port, D2_Pin, GPIO_PIN_SET)
-#define D2_LOW() HAL_GPIO_WritePin(D2_GPIO_Port, D2_Pin, GPIO_PIN_RESET)
-#define D3_HIGH() HAL_GPIO_WritePin(D3_GPIO_Port, D3_Pin, GPIO_PIN_SET)
-#define D3_LOW() HAL_GPIO_WritePin(D3_GPIO_Port, D3_Pin, GPIO_PIN_RESET)
-#define D4_HIGH() HAL_GPIO_WritePin(D4_GPIO_Port, D4_Pin, GPIO_PIN_SET)
-#define D4_LOW() HAL_GPIO_WritePin(D4_GPIO_Port, D4_Pin, GPIO_PIN_RESET)
+#define D10_HIGH() HAL_GPIO_WritePin(D10_GPIO_Port, D10_Pin, GPIO_PIN_SET)
+#define D10_LOW() HAL_GPIO_WritePin(D10_GPIO_Port, D10_Pin, GPIO_PIN_RESET)
+#define D100_HIGH() HAL_GPIO_WritePin(D100_GPIO_Port, D100_Pin, GPIO_PIN_SET)
+#define D100_LOW() HAL_GPIO_WritePin(D100_GPIO_Port, D100_Pin, GPIO_PIN_RESET)
+#define D1000_HIGH() HAL_GPIO_WritePin(D1000_GPIO_Port, D1000_Pin, GPIO_PIN_SET)
+#define D1000_LOW() HAL_GPIO_WritePin(D1000_GPIO_Port, D1000_Pin, GPIO_PIN_RESET)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
