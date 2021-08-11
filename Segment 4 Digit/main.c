@@ -54,7 +54,7 @@
 /* USER CODE BEGIN PV */
 uint32_t seg_ptn[10] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f};
 uint32_t k = 0;
-int ck = 0, num = 0, val, die;
+int ck = 0, num = 0, val2, die;
 int temp1, temp10, temp100, temp1000;
 extern int Run, Run2;
 /* USER CODE END PV */
@@ -86,6 +86,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 }
 
 void SevenSegment(int val) {
+  val2 = val;
   ck = val % 2;
   if(ck == 1) HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, SET);
   else HAL_GPIO_WritePin(SEGA_GPIO_Port, SEGA_Pin, RESET);
@@ -163,22 +164,22 @@ int main(void)
     temp100 = (Run2 / 100) % 10;
     temp1000 = Run2 / 1000;
     
-    SevenSegment(temp1);
+    SevenSegment(seg_ptn[temp1]);
     D1_LOW();
     HAL_Delay(1);
     D1_HIGH();
     
-    SevenSegment(temp10);
+    SevenSegment(seg_ptn[temp10]);
     D10_LOW();
     HAL_Delay(1);
     D10_HIGH();
 
-    SevenSegment(temp100);
+    SevenSegment(seg_ptn[temp100]);
     D100_LOW();
     HAL_Delay(1);
     D100_HIGH();
 
-    SevenSegment(temp1000);
+    SevenSegment(seg_ptn[temp1000]);
     D1000_LOW();
     HAL_Delay(1);
     D1000_HIGH();
