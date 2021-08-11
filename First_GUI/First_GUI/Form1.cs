@@ -98,7 +98,7 @@ namespace First_GUI
             IPEndPoint RemoteIP = ((UdpState)(res.AsyncState)).e;
             byte[] received = listen.EndReceive(res, ref RemoteIP);
 
-            IPEndPoint sendIP = new IPEndPoint(IPAddress.Parse("220.76.184.210"), 8080);
+            IPEndPoint sendIP = new IPEndPoint(IPAddress.Parse("192.168.0.99"), 3644);
             byte[] sendByte = Encoding.ASCII.GetBytes("OK RECEIVED\n");
             listen.Send(sendByte, sendByte.Length, sendIP);
 

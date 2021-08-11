@@ -102,7 +102,7 @@ namespace First_GUI
             // 
             this.richTextBox1.Location = new System.Drawing.Point(533, 86);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(405, 180);
+            this.richTextBox1.Size = new System.Drawing.Size(405, 363);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
