@@ -166,22 +166,22 @@ int main(void)
     
     SevenSegment(seg_ptn[temp1]);
     D1_LOW();
-    HAL_Delay(1);
+    //HAL_Delay(3);
     D1_HIGH();
     
     SevenSegment(seg_ptn[temp10]);
     D10_LOW();
-    HAL_Delay(1);
+    //HAL_Delay(3);
     D10_HIGH();
 
     SevenSegment(seg_ptn[temp100]);
     D100_LOW();
-    HAL_Delay(1);
+    //HAL_Delay(3);
     D100_HIGH();
 
     SevenSegment(seg_ptn[temp1000]);
     D1000_LOW();
-    HAL_Delay(1);
+    //HAL_Delay(3);
     D1000_HIGH();
 
     /*if(Run % 50 == 0 && die == 0) {
