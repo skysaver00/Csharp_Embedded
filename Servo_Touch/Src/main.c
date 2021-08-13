@@ -60,12 +60,6 @@ void SystemClock_Config(void);
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
   if(GPIO_Pin == Touch_Pin) {
     k++;
-    if(k % 2 == 0) {
-      htim2.Instance->CCR1 = 1250;
-    } else {
-      htim2.Instance->CCR1 = 900; 
-    }
-    HAL_Delay(100);
   }
 }
 /* USER CODE END 0 */
@@ -110,7 +104,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    if(k % 2 == 0) {
+      htim2.Instance->CCR1 = 1250;
+    } else {
+      htim2.Instance->CCR1 = 900; 
+    }
+    HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
