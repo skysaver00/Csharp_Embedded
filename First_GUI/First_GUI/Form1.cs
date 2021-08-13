@@ -126,6 +126,7 @@ namespace First_GUI
             check(data);
         }
 
+        int p = 0;
         public void check(String hex)
         {
             Debug.WriteLine(hex);
@@ -133,8 +134,40 @@ namespace First_GUI
             int i = 0;
             foreach(char each in hex)
             {
-                if (each.Equals(' ')) i++;;
+                if (each.Equals('A')) i++;;
                 stringArr[i] += each;
+            }
+
+            if (p == 6) p = 0;
+            else p++;
+
+            if (p == 0) 
+            {
+                YT_Label.BackColor = Color.Red;
+            } else if(p == 1)
+            {
+                YT_Label.BackColor = Color.White;
+                B227AT_Label.BackColor = Color.Red;
+            } else if(p == 2)
+            { 
+                B227AT_Label.BackColor = Color.White;
+                twoTLabelFirst.BackColor = Color.Red;
+            }
+                else if(p == 3)
+            {
+                twoTLabelFirst.BackColor = Color.White;
+                twoTLabelSecond.BackColor = Color.Red;
+            } else if(p == 4)
+            {
+                twoTLabelSecond.BackColor = Color.White;
+                B226BT_Label.BackColor = Color.Red;
+            } else if(p == 5)
+            {
+                B226BT_Label.BackColor = Color.White;
+                XT_Label.BackColor = Color.Red;
+            } else
+            {
+                XT_Label.BackColor = Color.White;
             }
 
             if(stringArr[0] == "YES" || stringArr[0] == "yes" || stringArr[0] == "Yes")
